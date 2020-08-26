@@ -10,6 +10,9 @@
         <meta name="HandheldFriendly" content="true">
         <link rel="icon" href="images/newLogo.png" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	</head>
 	<body>
 
@@ -19,7 +22,7 @@
 					<nav id="nav">
 						<a href="index.html" class="logoTitle">V3SSEL Leadership Initiative Inc.</a>
                         <a href="index.html" class="logo"><img src="images/newLogo.png" alt="V3ssel" style = width:4em;/></a>
-						<a href="about.html">About</a>
+						<a href="about.html">Our Team</a>
                         <span class = "dropdown">
                             <a href="upcomingevents.html" class="dropbtn">Events</a>
                             <div class="dropdown-content">
@@ -46,7 +49,7 @@
                     }
                 </style>
                 
-                <a href="#zero" id = "linkToZero">LEARN MORE</a>
+                <a href="#zero" id = "linkToZero" >LEARN MORE</a>
 			</section>
         
 
@@ -136,7 +139,167 @@
 				</div>
 			</section>
         </div>
-
+		<style>
+			/* Always set the map height explicitly to define the size of the div
+			 * element that contains the map. */
+			#map {
+			  height: 100%;
+			}
+			/* Optional: Makes the sample page fill the window. */
+			html, body {
+			  height: 100%;
+			  margin: 0;
+			  padding: 0;
+			}
+		  </style>
+		  <div id="map"></div>
+		  <!-- Replace following script src -->
+		  <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js">
+		  </script>
+		  <script defer
+		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqrQUTMSd8S9qgsexnI6HDekEecjdSFq4&callback=initMap">
+		  </script>
+		  <script>
+	  
+			function initMap() {
+	  
+			  var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 5,
+				center: {lat: 42.407211, lng: -71.382439}
+			  });
+	  
+			  // Create an array of alphabetical characters used to label the markers.
+			  var labels = ['PDS', 'West Windsor', 'Plainsbro', 'Bridgewater', 'Short Hills', 'Monroe', 'JP Stevens', 'Chester', 'Miami', 'Houston', 'Toronto', 'Boston'];
+	  
+			  // Add some markers to the map.
+			  // Note: The code uses the JavaScript Array.prototype.map() method to
+			  // create an array of markers based on a given "locations" array.
+			  // The map() method here has nothing to do with the Google Maps API.
+			  var markers = locations.map(function(location, i) {
+				return new google.maps.Marker({
+				  position: location,
+				  label: labels[i % labels.length]
+				});
+			  });
+	  
+			  // Add a marker clusterer to manage the markers.
+			  var markerCluster = new MarkerClusterer(map, markers,
+				  {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+			}
+			var locations = [
+			  {lat: 40.362927, lng: -74.690756},
+			  {lat: 40.308794, lng: -74.606980},
+			  {lat: 40.331297, lng: -74.595869},
+			  {lat: 40.590729, lng: -74.633348},
+			  {lat: 40.749188, lng: -74.324311},
+			  {lat: 40.347524, lng: -74.439640},
+			  {lat: 40.581011, lng: -74.362325},
+			  {lat: 40.119852, lng: -74.644793},
+			  {lat: 25.7617, lng: -80.1918},
+			  {lat: 29.749907, lng: -95.358421},
+			  {lat: 43.651070, lng: -79.347015},
+			  {lat: 42.3601, lng: -71.0589},
+			]
+		  </script>
+		  <section style="background-image: linear-gradient(rgba(49, 0, 255, 0.8), rgba(132, 5, 29, 0.8));
+		  background-size: cover;
+		  background-position: center;" id="one" class="wrapper">
+			<style>
+				.counter-section{
+					margin: 10% auto;
+					color: #fff;
+					
+					
+					
+				}
+				.icon-box{
+					border: 1px solid #fff;
+					height: 100px;
+					width: 100px;
+					margin: 20px auto;
+					transform: rotate(45deg);
+				}
+				.icon-box .fa{
+					font-size: 40px;
+					margin: 25px auto;
+					color: #ffc800;
+					transform: rotate(-45deg);
+				}
+				.counter-box p{
+					font-size: 20px;
+				}
+				.counter-box .counter{
+					font-size: 80px;
+				}
+			</style>
+			<div class = "container counter-section">
+				<div class="row text-center">
+					<div class="col-md-3 counter-box">
+						<div class = "icon-box"><i class="fa fa-money"></i></div>
+						<p class="counter">1000</p>
+						<p>Money Raised</p>
+					</div>
+					<div class="col-md-3 counter-box">
+						<div class = "icon-box"><i class="fa fa-book"></i></div>
+						<p class="counter">13</p>
+						<p>Chapters</p>
+					</div>
+					<div class="col-md-3 counter-box">
+						<div class = "icon-box"><i class="fa fa-users"></i></div>
+						<p class="counter">100</p>
+						<p>Employees</p>
+					</div>
+					<div class="col-md-3 counter-box">
+						<div class = "icon-box"><i class="fa fa-flag"></i></div>
+						<p class="counter">3</p>
+						<p>Countries</p>
+					</div>
+				</div>
+			</div>
+			<script>
+	
+				(function(e){
+				"use strict";
+				e.fn.counterUp=function(t){
+				var n=e.extend({time:400,delay:10},t);
+				return this.each(function(){
+				var t=e(this),r=n,i=function(){
+				var e=[],n=r.time/r.delay,i=t.text(),s=/[0-9]+,[0-9]+/.test(i);
+				i=i.replace(/,/g,"");
+				var o=/^[0-9]+$/.test(i),u=/^[0-9]+\.[0-9]+$/.test(i),a=u?(i.split(".")[1]||[]).length:0;
+				for(var f=n;f>=1;f--){
+					var l=parseInt(i/n*f);
+					u&&(l=parseFloat(i/n*f).toFixed(a));
+					if(s)while(/(\d+)(\d{3})/.test(l.toString()))l=l.toString().replace(/(\d+)(\d{3})/,"$1,$2");
+					e.unshift(l)}t.data("counterup-nums",e);
+					t.text("0");
+					var c=function(){t.text(t.data("counterup-nums").shift());
+					if(t.data("counterup-nums").length)setTimeout(t.data("counterup-func"),r.delay);
+					else{
+					delete t.data("counterup-nums");
+					t.data("counterup-nums",null);
+					t.data("counterup-func",null)}};
+					t.data("counterup-func",c);
+					setTimeout(t.data("counterup-func"),r.delay)};
+					t.waypoint(i,{offset:"100%",triggerOnce:!0})})}})(jQuery);
+	
+			</script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+			<script>
+				
+	
+				jQuery(document).ready(function( $ )
+				{
+	
+					$('.counter').counterUp({
+						delay: 10,
+						time: 1000
+					});
+				});
+				
+			</script>
+		  </section>
+		</body>
 
 		<!-- Footer -->
 			<footer id="footer">
