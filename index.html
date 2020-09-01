@@ -27,7 +27,7 @@
                             <a href="upcomingevents.html" class="dropbtn">Events</a>
                             <div class="dropdown-content">
                                 <a href="upcomingevents.html">Upcoming Events</a>
-                                <a href="pastevents.html"> Past Events</a>
+                                <a href="pastevents.html"> Past Speakers</a>
                             </div>
                         </span>
                         <a href="chapters.html">Chapters</a>
@@ -47,9 +47,18 @@
                     #banner #firsth1{
                         padding-top: 5%;
                     }
+                    #banner h1{
+                        margin-left:auto;
+                    }
                 </style>
                 
                 <a href="#zero" id = "linkToZero" >LEARN MORE</a>
+                <style>
+                    #linkToZero{
+                        margin-top: 5%;
+                        left: 44%;
+                    }
+                </style>
 			</section>
         
 
@@ -84,11 +93,11 @@
                                 text-align: center;
                                 margin-bottom: 0;
                             }
-/*
-                            .flex.flex-3 h2{
-                                margin-botto: 0;;
+                            #zero > div > div > h2{
+                                margin:auto;
+                                margin-top: -4%;
+                                margin-bottom: 2%;
                             }
-*/
                         </style>
 					</div>
 				</div>
@@ -103,9 +112,11 @@
                     text-align:center;
                     font-size:1.25em;
                     color:#000000;
+                    margin-bottom: 5%;
                 }
                 #oneHeader>h1{
-                    margin-bottom:1%;
+                    padding-top:3%;
+                    padding-bottom:2%;
                 }
             </style>
 			<section id="one" class="wrapper">
@@ -139,6 +150,9 @@
 				</div>
 			</section>
         </div>
+        <div id="mapHeader">
+            <h2>Our Locations</h2>
+        </div>
 		<style>
 			/* Always set the map height explicitly to define the size of the div
 			 * element that contains the map. */
@@ -151,6 +165,14 @@
 			  margin: 0;
 			  padding: 0;
 			}
+            #mapHeader{
+                text-align: center;
+                padding:3%;
+                background-color: #AADAFF;
+            }
+            #mapHeader h2{
+                font-size: 2.5em;
+            }
 		  </style>
 		  <div id="map"></div>
 		  <!-- Replace following script src -->
@@ -201,12 +223,14 @@
 			  {lat: 42.3601, lng: -71.0589},
 			]
 		  </script>
-		  <section style="background-image: linear-gradient(rgba(49, 0, 255, 0.8), rgba(132, 5, 29, 0.8));
+		  <section style="background-image: linear-gradient(45deg, #8900FA, #ACD2Fe);
 		  background-size: cover;
-		  background-position: center;" id="one" class="wrapper">
+		  background-position: center;" id="counter" class="wrapper">
 			<style>
 				.counter-section{
 					margin: 10% auto;
+                    margin-top:5%;
+                    margin-bottom: 5%;
 					color: #fff;
 					
 					
@@ -232,7 +256,12 @@
 					font-size: 80px;
 				}
 			</style>
+              <h2 style="z-index:1;
+                           text-align: center;
+                           color:#FFFFFF;
+                           font-size: 3em;">Our Impact</h2>
 			<div class = "container counter-section">
+                
 				<div class="row text-center">
 					<div class="col-md-3 counter-box">
 						<div class = "icon-box"><i class="fa fa-money"></i></div>
