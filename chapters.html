@@ -28,7 +28,7 @@
                             <a href="upcomingevents.html" class="dropbtn">Events</a>
                             <div class="dropdown-content">
                                 <a href="upcomingevents.html">Upcoming Events</a>
-                                <a href="pastevents.html"> Past Events</a>
+                                <a href="pastevents.html"> Past Speakers</a>
                             </div>
                         </span>
                         <a href="chapters.html">Chapters</a>
@@ -50,8 +50,12 @@
                 #zero{
                     background-image: linear-gradient(45deg, #DFC0EC, #6EAFBF);
                 }
+                #zero div div h2{
+                    padding-left:2%;
+                }
                 .flex.flex-3 h2{
                     padding-top:5%;
+                    padding-bottom:3%;
                 }
                 #zero div div p{
                     text-align: center;
@@ -65,10 +69,10 @@
 				<div class="inner">
 					<div class="flex flex-3">
 						<h2>Chapters</h2>
-                        <div><span>Princeton, NJ</span><span>West Windsor, NJ</span><span>Plainsboro, NJ</span></div>
-                        <div><span>Bridgewater, NJ</span><span>Short Hills, NJ</span><span>Monroe, NJ</span></div>
-                        <div><span>Edison, NJ</span><span>Chesterfield, NJ</span><span>Miami, Florida</span></div>
-                        <div><span>Houston, Texas</span><span>Toronto, Canada</span><span>Boston, Massachussetts</span></div>
+                        <div class="container"><div class="column">Princeton, NJ</div><div class="column">West Windsor, NJ</div><div class="column">Plainsboro, NJ</div></div>
+                        <div class="container"><div class="column">Bridgewater, NJ</div><div class="column">Short Hills, NJ</div><div class="column">Monroe, NJ</div></div>
+                        <div class="container"><div class="column">Edison, NJ</div><div class="column">Chesterfield, NJ</div><div class="column">Miami, Florida</div></div>
+                        <div class="container"><div class="column">Houston, Texas</div><div class="column">Toronto, Canada</div><div class="column">Boston, Massachussetts</div></div>
 					</div>
 				</div>
             <style>
@@ -76,35 +80,34 @@
     
                     display: block;
                     margin-left: 43%;
-                    font-size: 250%
+                    font-size: 250%;
+                    margin-bottom: 4%;
 
                 }
                 
-                #one > div > div > div > span{
+                .container{
+                    
+                    display: flex;
+                    width:80%;
+                    font-size: 140%;
+                    color: black;
+
+                }
+                
+                .column{
                     
                     border: solid 4px #000000;
-                    display: inline-block;
-                    margin-right:10%;
+                    flex:1;
+                    margin-right:6%;
                     margin-bottom: 5%;
                     padding: 5px;
                 }
-                #one > div > div > div > span:last-child{
+                #one > div > div > div > div:last-child{
                     
                     margin-right:0%;
                 }
                 
-                #one > div > div > div{
-                    
-                    text-align: center;
-                    display: block;
-                    margin: auto;
-                    width:80%;
-
-/*                    margin-left: 35%;*/
-                    font-size: 150%;
-                    color: black;
-
-                }
+                
             </style>
 			</section>
         
