@@ -896,19 +896,19 @@
 
 	}
 #zero > div > div > h2{
-    
+
     margin-left: 39%;
     margin-right: 30%;
     font-size: 250%
-    
+
 }
 #zero > div > div > p{
-    
+
     margin-left: 10%;
     margin-right: 10%;
     font-size: 150%;
     color: black;
-    
+
 }
 	@media screen and (max-width: 980px) {
 
@@ -1790,7 +1790,7 @@
 		}
 
 /* Section/Article */
-    
+
     #oneHeader{
         text-align: center;
         font-size: 3em;
@@ -2800,7 +2800,7 @@
     .dropdown{
         overflow: auto;
     }
-    
+
     .dropbtn {
       font-size: 16px;
       border: none;
@@ -2839,7 +2839,7 @@
     .dropdown:hover .dropbtn {
         background-color: #bbb;
     }
-    
+
 }
 
 	.subpage {
@@ -3086,7 +3086,7 @@
 		border-top: 0.5em solid #5385c1;
         height: 100vh;
 	}
-    
+
         #banner h2{
             color: transparent;
         }
@@ -3113,7 +3113,7 @@
             background-color: transparent;
             color:#456EEC;
         }
-        
+
         #linkToZero:hover{
             text-decoration: none;
             padding: 0.6em;
@@ -3130,13 +3130,13 @@
 			-ms-transition: background 0.15s ease-in-out;
 			transition: background 0.15s ease-in-out;
         }
-        
+
         #linkToZero{
             position: absolute;
             left: 45%;
             top: 55%;
         }
-		
+
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 
 			#banner {
@@ -3239,7 +3239,7 @@
 			-ms-order: 2;
 			order: 2;
 		}
-        
+
 
 		#footer ul {
 			-ms-flex-order: 1;
