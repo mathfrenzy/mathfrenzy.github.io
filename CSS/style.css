@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:400,700&display=swap');
+
+/* Skip links */
+a.skip-links-item {
+    font-size: 14px;
+    text-decoration: underline;
+    position: absolute;
+    left: 15px;
+    top: -100px;
+    z-index: 10000;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #ffba00;
+    outline: none;
+    transition: top .2s, background-color .2s;
+}
+
+a.skip-links-item:active,
+a.skip-links-item:focus {
+    top: 0;
+    background-color: #272727;
+}
+
+#skip-links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    list-style: outside none;
+}
+
+body {
+    font-family: 'Lato', arial, sans-serif;
+    color: #444444;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #246056;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border-bottom: 1px solid #fff;
+    margin: 10px auto;
+    max-width: 768px;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+}
+.videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+  	height: 100%;
+}
+
+.overlay a {
+    color: #fff;
+}
+
+.overlay a:hover {
+    color: #ffb300;
+    text-decoration: none !important;
+}
+
+.masthead .overlay {
+  padding: 100px 0px;
+}
+
+.navbar {
+    background: #246056;
+}
+
+.navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    color: #fff;
+    font-size: 30px;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: 200ms ease-in-out
+}
+
+.navbar-nav li a:hover {
+    background: #fff;
+    color: #246056;
+}
+
+.navbar-nav li > ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: #246056;
+    color: #fff;
+    padding-left: 0px;
+    width: 150px;
+    padding-top: 8px;
+  	z-index: 999;
+}
+
+.navbar-nav li:hover > ul,
+.navbar-nav li:focus-within > ul {
+    display: block;
+}
+
+.navbar-nav li ul li a {
+    display: block;
+}
+
+a {
+    color: #246056;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #246056;
+}
+
+a.btn-outline {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 0px;
+    margin: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+a.btn-outline:hover {
+    background: #246056;
+    border-color: #246056;
+    color: #fff;
+}
+
+.masthead {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.parallax {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.parallax h1,
+.parallax h2,
+.parallax h3,
+.parallax h4 {
+    color: #fff !important;
+    margin: 30px 0px 15px;
+}
+
+.masthead img {
+    max-width: 500px;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 30px;
+}
+
+footer a {
+    color: #fff;
+    transition: none;
+}
+
+footer a:hover {
+    color: #ffb300;
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .masthead {
+        height: 50vh;
+        min-height: auto;
+    }
+
+    .masthead img {
+        max-width: 250px;
+    }
+
+    .masthead .overlay {
+        padding: 15px 0px;
+    }
+
+    .navbar-nav li > ul {
+        position: relative;
+    }
+}
+
+
