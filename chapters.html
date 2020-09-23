@@ -23,7 +23,7 @@
     <header id="header">
         <div class="inner">
             <nav id="nav">
-                <a href="index.html" class="logo"><img src="images/newLogo.png" alt="V3ssel" style=w idth:4em;/></a>
+                <a href="index.html" class="logo"><img src="images/newLogo.png" alt="V3ssel" style=width:4em;/></a>
                 <a href="index.html" class="logoTitle">V3SSEL Leadership Initiative Inc.</a>
                 <a href="about.html">Our Team</a>
                 <span class="dropdown">
@@ -76,27 +76,89 @@
             <div class="flex flex-3">
                 <h2>Chapters</h2>
                 <div class="container">
-                    <div class="column">Princeton, NJ</div>
-                    <div class="column">West Windsor, NJ</div>
-                    <div class="column">Plainsboro, NJ</div>
+                    <div class="column" onclick="openCard('princetonPop')">Princeton, NJ</div>
+                    <div id="princetonPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
+
+                    <div class="column" onclick="openCard('westWindsorPop')">West Windsor, NJ</div>
+                    <div id="westWindsorPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
+
+                    <div class="column" onclick="openCard('plainsboroPop')">Plainsboro, NJ</div>
+                    <div id="plainsboroPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
                 </div>
                 <div class="container">
-                    <div class="column">Bridgewater, NJ</div>
-                    <div class="column">Short Hills, NJ</div>
-                    <div class="column">Monroe, NJ</div>
+                    <div class="column" onclick="openCard('bridgewaterPop')">Bridgewater, NJ</div>
+                    <div id="bridgewaterPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
+
+                    <div class="column" onclick="openCard('shortHillsPop')">Short Hills, NJ</div>
+                    <div id="shortHillsPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
+
+                    <div class="column" onclick="openCard('monroePop')">Monroe, NJ</div>
+                    <div id="monroePop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
                 </div>
                 <div class="container">
-                    <div class="column">Edison, NJ</div>
-                    <div class="column">Chesterfield, NJ</div>
-                    <div class="column">Miami, Florida</div>
+                    <div class="column" onclick="openCard('edisonPop')">Edison, NJ</div>
+                    <div id="edisonPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
+
+                    <div class="column" onclick="openCard('chesterfieldPop')">Chesterfield, NJ</div>
+                    <div id="chesterfieldPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
+
+                    <div class="column" onclick="openCard('miamiPop')">Miami, Florida</div>
+                    <div id="miamiPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
+
                 </div>
                 <div class="container">
-                    <div class="column">Houston, Texas</div>
-                    <div class="column">Toronto, Canada</div>
-                    <div class="column">Boston, Massachussetts</div>
+                    <div class="column" onclick="openCard('houstonPop')">Houston, Texas</div>
+                    <div id="houstonPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
+
+                    <div class="column" onclick="openCard('torontoPop')">Toronto, Canada</div>
+                    <div id="torontoPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
+
+                    <div class="column" onclick="openCard('bostonPop')">Boston, Massachussetts</div>
+                    <div id="bostonPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
+
                 </div>
                 <div class="container">
-                    <div class="column">Instanbul, Turkey</div>
+                    <div class="column" onclick="openCard('instanbulPop')">Instanbul, Turkey</div>
+                    <div id="instanbulPop" class="popUp">
+                        <h2>Plainsboro, NJ</h2>
+                        <i class="fas fa-times fa-3x" onclick="closeCard('plainsboroPop')"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -155,6 +217,15 @@
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        function openCard(idName) {
+            document.getElementById(idName).style.display = "block";
+        }
+
+        function closeCard(idName) {
+            document.getElementById(idName).style.display = "none";
+        }
+    </script>
 
 </body>
 
