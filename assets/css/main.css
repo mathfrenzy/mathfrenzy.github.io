@@ -279,18 +279,17 @@ body {
 
 /* Pop Up Animation */
 
-
-/* .popUp {
+.popUp {
     display: none;
     position: fixed;
     bottom: 0;
-    right: 15px;x
+    right: 15px;
     background-color: #f1f1f1;
     z-index: 9;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} */
+}
 
 
 /* Grid */
