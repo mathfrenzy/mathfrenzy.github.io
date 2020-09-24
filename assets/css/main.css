@@ -279,7 +279,8 @@ body {
 
 /* Pop Up Animation */
 
-.popUp {
+
+/* .popUp {
     display: none;
     position: fixed;
     bottom: 0;
@@ -289,16 +290,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.container {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 10px auto;
-    position: relative;
-}
+} */
 
 
 /* Grid */
