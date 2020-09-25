@@ -197,6 +197,59 @@
                         </style>
 					</div>
 				</div>
+            </section>
+            <section id="one" class="wrapper">
+				<div class="inner">
+					<div class="flex flex-3" id = "about2">
+						<article>
+							<p><img src="images/newLogo.png" alt="Maceo Dehne" width = 50%/></p>
+							<footer>
+                                <div class="popup" onclick="myFunction10()"><h3>Lorem ipsum</h3>
+                                <span class="popuptext" id="popup10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ducimus iste fugiat qui, aspernatur maiores explicabo harum facere excepturi vero, officia, reprehenderit et vitae libero nihil sint earum corrupti eos?</span>
+                                </div>
+							<p>Lorem ipsum dolor</p>
+							</footer>
+						</article>
+						<article id = "last-about2">
+							<p><img src="images/newLogo.png" alt="Ansh Gadodia" width = 50%/></p>
+							<footer>
+                                <div class="popup" onclick="myFunction11()"><h3>Lorem ipsum</h3>
+                                <span class="popuptext" id="popup11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ducimus iste fugiat qui, aspernatur maiores explicabo harum facere excepturi vero, officia, reprehenderit et vitae libero nihil sint earum corrupti eos?</span>
+                                </div>
+							<p>Lorem ipsum dolor</p>
+							</footer>
+                            <style>
+                                #last-about2:before {
+                                    border:none;
+                                }
+                            </style>
+						</article>
+						<style>
+                            .flex.flex-3 article footer h3{
+                                font-weight: 900;
+                                margin-bottom: 1%;
+                            }
+                            .flex.flex-3 article footer p{
+                                font-weight: 500;
+                            }
+                            @media screen and (max-width: 980px) {
+                                #about2 article{
+                                    width: 100%
+                                }
+
+                                #about2 article p img{
+                                    width: 84%
+                                }
+
+                                #last-about2 {
+                                    border: none;
+                                    padding-bottom: 0;
+                                    margin: 0 0 1em 0;
+                                }
+                            }
+                        </style>
+					</div>
+				</div>
 			</section>
             <style>
                 #oneTotal{
@@ -277,6 +330,14 @@
 
             function myFunction9() {
                               var popup = document.getElementById("popup9");
+                              popup.classList.toggle("show");
+                            }
+            function myFunction10() {
+                              var popup = document.getElementById("popup10");
+                              popup.classList.toggle("show");
+                            }
+            function myFunction11() {
+                              var popup = document.getElementById("popup11");
                               popup.classList.toggle("show");
                             }
         </script>
